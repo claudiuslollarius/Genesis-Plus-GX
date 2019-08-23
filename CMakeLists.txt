@@ -143,6 +143,7 @@ target_compile_definitions(${CoreName} PRIVATE
     Z80_OVERCLOCK_SHIFT=20
     HAVE_YM3438_CORE
     "INLINE=static _inline"
+    _CRT_SECURE_NO_WARNINGS
 )
 
 target_include_directories(${CoreName} PUBLIC
