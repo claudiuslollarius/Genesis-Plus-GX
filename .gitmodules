@@ -1,0 +1,4 @@
+[submodule "Upstream"]
+	path = Upstream
+	url = https://github.com/Libretro/Genesis-Plus-GX
+	branch = master
