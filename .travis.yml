@@ -1,5 +1,5 @@
 custom_parameters:
-  - target_name: &target_name Genesis-Plus-GX
+  - cmake_build_target_command: cmake --build . --target Genesis-Plus-GX --config Release
 
 language: cpp
 
@@ -11,5 +11,5 @@ matrix:
   include:
   - os: windows
     script:
-      - cmake -G "Visual Studio 15 2017" -A Win32
-      - cmake --build . --target *target_name --config Release
+      - cmake -G "Visual Studio 15 2017" -A Win32 ..
+      - *cmake_build_target_command
