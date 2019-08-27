@@ -1,5 +1,5 @@
 custom_parameters:
-  - cmake_build_target_command: cmake --build . --target Genesis-Plus-GX --config Release
+  - cmake_build_target_command: &cmake_build_target_command cmake --build . --target Genesis-Plus-GX --config Release
 
 language: cpp
 
